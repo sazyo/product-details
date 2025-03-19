@@ -1,4 +1,3 @@
-// دالة للحصول على تفاصيل المنتج بناءً على id
 const getProductDetails = async () => {
     const URLparams = new URLSearchParams(window.location.search);
     const productId = URLparams.get('id');

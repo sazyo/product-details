@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+
+    <div class="positionAbs">
+    <span class="loader"></span>
+    </div>
+
     <section class="categories">
         <div class="container">
             <div class="row">
@@ -16,7 +21,36 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/detals.js"></script>
+
+    <div class="modal d-none ">
+
+        <div class="content">
+            <div class="row">
+                <div class="lb">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="imge">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="rb">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="cb">
+                <i id="closeModalButton" class="fa-regular fa-rectangle-xmark"></i>
+            </div>
+    </div>
+    </div>
+
+
+    <div class="pagination">
+        <ul></ul>
+    </div>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./assets/detals.js"></script>
+
+
 </body>
 </html>
